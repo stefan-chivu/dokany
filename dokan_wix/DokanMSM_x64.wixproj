@@ -51,6 +51,14 @@
     </WixExtension>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\dokan_wix\DokanMSI_x64.wixproj">
+      <Name>DokanMSI_x64</Name>
+      <Project>{05687ab6-5280-459b-896d-9a09e7e16ab9}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
     <ProjectReference Include="WiXCA\WiXCA.vcxproj">
       <Name>WiXCA</Name>
       <Project>{457a77f5-a390-4dcb-82e1-391c45b42c6d}</Project>
